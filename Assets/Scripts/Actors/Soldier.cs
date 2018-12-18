@@ -33,7 +33,7 @@ public class Soldier : Actor
 	{
 		base.Initialize();
 
-		spawnPosition = rigidbody.position;
+		spawnPosition = rigidbody.position + Vector3.up;
 		spawnRotation = rigidbody.rotation;
 
 		healthController.OnDamage += OnDamage;
